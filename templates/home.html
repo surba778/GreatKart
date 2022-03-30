@@ -1,11 +1,14 @@
-
-
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
+
+{% block content %}
+
+
 
 <!-- ========================= SECTION MAIN ========================= -->
 <section class="section-intro padding-y-sm">
 <div class="container">
+
 
 <div class="intro-banner-wrap">
 	<img src="{%static 'images/banners/1.jpg' %}" class="img-fluid rounded">
@@ -26,6 +29,7 @@
 
 	
 <div class="row">
+	{% for product in products %}
 	<div class="col-md-3">
 		<div class="card card-product-grid">
 			<a href="./product-detail.html" class="img-wrap"> <img src="{{ product.images.url }}"> </a>
@@ -35,20 +39,14 @@
 			</figcaption>
 		</div>
 	</div> <!-- col.// -->
-	
+	{% endfor %}
 </div> <!-- row.// -->
 
 </div><!-- container // -->
 </section>
 <!-- ========================= SECTION  END// ========================= -->
-
-
-
-
-
-
 </body>
 </html>
 
-
+{% endblock %}
 
