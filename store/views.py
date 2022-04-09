@@ -4,7 +4,8 @@ from category.models import Category
 from carts.models import CartItem
 
 from carts.views import _cart_id
-from django.http import HttpResponse
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+
 def store(request, category_slug=None):
     categories = None
     products = None
