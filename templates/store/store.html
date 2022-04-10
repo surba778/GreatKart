@@ -5,20 +5,24 @@
 <!-- ========================= SECTION PAGETOP ========================= -->
 <section class="section-pagetop bg">
 	<div class="container">
+		{% if 'search' in request.path %}
+		<h2 class="title-page">Search Result</h2>
+	{% else %}
 		<h2 class="title-page">Our Store</h2>
+	{% endif %}
 		
-	</div> <!-- container //  -->
-	</section>
-	<!-- ========================= SECTION INTRO END// ========================= -->
+</div> <!-- container //  -->
+</section>
+<!-- ========================= SECTION INTRO END// ========================= -->
 
 <!-- ========================= SECTION CONTENT ========================= -->
 <section class="section-content padding-y">
-	<div class="container">
+<div class="container">
 	
-	<div class="row">
+<div class="row">
 		<aside class="col-md-3">
 			
-	<div class="card">
+<div class="card">
 		<article class="filter-group">
 			<header class="card-header">
 				<a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
@@ -129,12 +133,13 @@
 	</header><!-- sect-heading -->
 	
 	<div class="row">
+		{% if products %}
 		{% for product in products %}
 		<div class="col-md-4">
 			<figure class="card card-product-grid">
 				<div class="img-wrap"> 
 					
-					<img src="{{ product.images.url }}">
+					<a href="{{ product.get_url }}"><img src="{{ product.images.url }}"></a>
 					
 				</div> <!-- img-wrap.// -->
 				<figcaption class="info-wrap">
@@ -148,7 +153,12 @@
 				</figcaption>
 			</figure>
 		</div> <!-- col.// -->
-		{% endfor %}	
+		{% endfor %}
+		% else %}
+		<div>
+			<h2>No result found. please try again.</h2>
+		</div>
+		{% endif %}
 	</div> <!-- row end.// -->
 	
 	
