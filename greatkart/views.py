@@ -8,3 +8,6 @@ def home(request):
         'products': products,
     }
     return render(request, 'home.html', context)
+
+def dashboard(request):
+    return render(request, 'account/dashboard.html', {'section': 'dashboard'})
