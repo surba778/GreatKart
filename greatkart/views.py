@@ -9,5 +9,3 @@ def home(request):
     }
     return render(request, 'home.html', context)
 
-def dashboard(request):
-    return render(request, 'account/dashboard.html', {'section': 'dashboard'})
