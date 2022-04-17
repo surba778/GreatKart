@@ -109,8 +109,8 @@
 						</p>
 
 
-						<div id="paypal-button-container">
-							<!-- PayPal Button Will Load -->
+						<div id="stripe-button-container">
+							<!-- stripe Button Will Load -->
 						</div>
 
 					</div> <!-- card-body.// -->
@@ -153,7 +153,7 @@
 	var payment_method = 'Stripe'
 	var redirect_url = "{% url 'order_complete' %}"
 	// Render the Stripe button into #stripe-button-container
-	paypal.Buttons({
+	stripe.Buttons({
 
 		style: {
 			color: 'blue',

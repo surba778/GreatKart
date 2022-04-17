@@ -155,6 +155,8 @@ def order_complete(request):
             'transID': payment.payment_id,
             'payment': payment,
             'subtotal': subtotal,
+            'stripe_public_key' : 'pk_test_51Ke1PhIptPaWBKYcjT3dSPmCbZflNX4RupbYTAOLYBtB1XevQz50riqqawazzHqKD5nQDw2jk9DJD8W7P6WLkxf700pjt1Vq7J',
+            'client_secret' : 'test client secret',
         }
         return render(request, 'orders/order_complete.html', context)
     except (Payment.DoesNotExist, Order.DoesNotExist):
