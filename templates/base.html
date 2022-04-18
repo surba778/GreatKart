@@ -1,61 +1,71 @@
 {% load static %}
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="pragma" content="no-cache" />
-<meta http-equiv="cache-control" content="max-age=604800" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="cache-control" content="max-age=604800" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>GreatKart | One of the Biggest Online Shopping Platform</title>
+  <title>GreatKart | One of the Biggest Online Shopping Platform</title>
 
-<link href="{% static 'images/favicon.ico' %}" rel="shortcut icon" type="image/x-icon">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon" type="image/x-icon">
 
-<!-- jQuery -->
-<script src="{% static 'js/jquery-2.0.0.min.js' %}" type="text/javascript"></script>
+  <!-- jQuery -->
+  <script src="{% static 'js/jquery-2.0.0.min.js' %}" type="text/javascript"></script>
 
-<!-- Bootstrap4 files-->
-<script src="{% static 'js/bootstrap.bundle.min.js' %}" type="text/javascript"></script>
-<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Bootstrap4 files-->
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}" type="text/javascript"></script>
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" />
 
-<!-- Font awesome 5 -->
-<link href="{% static 'fonts/fontawesome/css/all.min.css' %}" type="text/css" rel="stylesheet">
+  <!-- Font awesome 5 -->
+  <link href="{% static 'fonts/fontawesome/css/all.min.css' %}" type="text/css" rel="stylesheet">
 
-<!-- custom style -->
-<link href="{% static 'css/ui.css' %}" rel="stylesheet" type="text/css"/>
-<link href="{% static 'css/responsive.css' %}" rel="stylesheet" media="only screen and (max-width: 1200px)" />
+  <!-- custom style -->
+  <link href="{% static 'css/ui.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" media="only screen and (max-width: 1200px)" />
 
-<link href="{% static 'css/custom.css' %}" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:300px;}
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+  <link href="{% static 'css/custom.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Begin Mailchimp Signup Form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup {
+      background: #fff;
+      clear: left;
+      font: 14px Helvetica, Arial, sans-serif;
+      width: 300px;
+    }
+
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
+  </style>
 
-<!-- custom javascript -->
-<script src="{% static 'js/script.js' %}" type="text/javascript"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="{% static 'js/jquery-3.3.1.min.js' %}" type="text/javascript"></script>
+  <!-- custom javascript -->
+  <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}" type="text/javascript"></script>
 
 
-<!-- paypal script -->
-<script src="https://www.paypal.com/sdk/js?client-id=AS_PEz2obmjNM_kmX-nnrx3Y4qjMlAXU_wXZUc4C61uTKCRUzeb86W1P895VnD2b-DQAxEn91SApl1xS&currency=USD"></script>
+  <!-- paypal script -->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=AS_PEz2obmjNM_kmX-nnrx3Y4qjMlAXU_wXZUc4C61uTKCRUzeb86W1P895VnD2b-DQAxEn91SApl1xS&currency=USD">
+  </script>
 
-<script type="text/javascript">
-/// some script
+  <script type="text/javascript">
+    /// some script
 
-// jquery ready start
-$(document).ready(function() {
-	// jQuery code
+    // jquery ready start
+    $(document).ready(function () {
+      // jQuery code
 
-});
-// jquery end
-</script>
+    });
+    // jquery end
+  </script>
 
 </head>
+
 <body>
 
   <!-- navbar -->
@@ -66,55 +76,61 @@ $(document).ready(function() {
   {% endblock %}
 
 
-<!-- footer -->
-{% include 'includes/footer.html' %}
+  <!-- footer -->
+  {% include 'includes/footer.html' %}
 
-<footer class="container-wrapper">
-  <div class="container quotes-container content-container">
-    <section class="footer">
-      <div class="row">
-        <div class="col-12 page-header mb-4">
-          <h2 class="text-uppercase">Stay in touch:</h2>
-          <hr class="block-divider block-divider--short">
+  <footer class="container-wrapper">
+    <div class="container quotes-container content-container">
+      <section class="footer">
+        <div class="row">
+          <div class="col-12 page-header mb-4">
+            <h2 class="text-uppercase">Stay in touch:</h2>
+            <hr class="block-divider block-divider--short">
+          </div>
         </div>
-     </div>
-     <div class="row">
-       <div class="col-12 col-md-6">
-         <h3>Social</h3>
-         <p>Keep up to date with all our latest offers</p>
-         <a href="https://www.facebook.com/GreatKart-112825531400432/?ref=page_internal" target="_blank"><i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
-       </div>
-       <div class="col-12 col-md-6">
-         <h2>Subscribe!</h2>
-         <p>Get exclusive offers and discount codes by subscribing to our monthly newsletter</p>
-         
-<div id="mc_embed_signup">
-<form action="https://gmail.us14.list-manage.com/subscribe/post?u=64b778d51908a042210d4edfe&amp;id=26083916d8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-	<div id="mce-responses" class="clear foot">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_64b778d51908a042210d4edfe_26083916d8" tabindex="-1" value=""></div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3>Social</h3>
+            <p>Keep up to date with all our latest offers</p>
+            <a href="https://www.facebook.com/GreatKart-112825531400432/?ref=page_internal" target="_blank"><i
+                class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2>Subscribe!</h2>
+            <p>Get exclusive offers and discount codes by subscribing to our monthly newsletter</p>
+
+            <div id="mc_embed_signup">
+              <form
+                action="https://gmail.us14.list-manage.com/subscribe/post?u=64b778d51908a042210d4edfe&amp;id=26083916d8"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                  <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                    </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                  </div>
+                  <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                      name="b_64b778d51908a042210d4edfe_26083916d8" tabindex="-1" value=""></div>
+                  <div class="optionalParent">
+                    <div class="clear foot">
+                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
+            <!--End mc_embed_signup-->
+          </div>
         </div>
+      </section>
     </div>
-</form>
-</div>
-<!--End mc_embed_signup-->
-       </div>
-     </div>
-   </section>
- </div>
-</footer>
-<!-- /.footer -->
+  </footer>
+  <!-- /.footer -->
