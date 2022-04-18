@@ -182,9 +182,4 @@ MESSAGE_TAGS = {
 }
 
 
-# SMTP configuration
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'surba778@gmail.com'
-EMAIL_HOST_PASSWORD = 'tanvi'
-EMAIL_USE_TLS = True
+
