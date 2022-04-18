@@ -27,7 +27,6 @@ def payments(request):
     order.payment = payment
     order.is_ordered = True
     order.save()
-
     # Move the cart items to Order Product table
     cart_items = CartItem.objects.filter(user=request.user)
 
