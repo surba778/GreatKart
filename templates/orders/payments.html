@@ -115,9 +115,7 @@
 
 					</div> <!-- card-body.// -->
 				</div> <!-- card.// -->
-				<div class="alert alert-danger" role="alert">
-				  <b>Please Note: </b>This is a demo website. Do not try to make real payments.
-				</div>
+				
 			</aside> <!-- col.// -->
 
 
@@ -177,7 +175,7 @@
 
 		// Finalize the transaction
 		onApprove: function(data, actions) {
-			return actions.order.capture().then(function(orderData) {
+			return actions.order.capture().then(function(details) {
 				// Show a success message to the buyer
 				console.log(details);
 				sendData();
@@ -197,14 +195,14 @@
 					})
 				  .then((response) => response.json())
 				  .then((data) => {
-						//window.location.href = redirect_url + '?order_number='+data.order_number+'&payment_id='+data.transID;
+						window.location.href = redirect_url + '?order_number='+data.order_number+'&payment_id='+data.transID;
 					});
 				}
 			});
 		}
 
 
-	}).render('#paypal-button-container');
+        }).render('#paypal-button-container');
 </script>
 
 {% endblock %}
