@@ -5,7 +5,7 @@ This website provides full CRUD functionality to the admin user to add and delet
 
 This website is for educational purposes only.
 
-View the live site [here](https://booking2022.herokuapp.com/)
+View the live site [here]()
 
 <br>
 
@@ -67,22 +67,20 @@ View the live site [here](https://booking2022.herokuapp.com/)
 
     - Dashboard and Logout links (for signed in users) 
     - Login and sign up links (for unsigned users)
-        ![Getting home page](https://github.com/surba778/project-4-restaurant-booking/blob/main/readme-images/Reservetable_page.png)
+        ![Getting home page](https://github.com/surba778/greatkart/blob/main/readme-images/greatkart%20homepage.png)
 
          
-
 ## Signed In Users
 
 - This is a summary of the features available only to login users:
 
     - Signed In users:
         - Sign out
-        - Add and remove (only you own) the reservation
-        - Access reservation history 
-        - Add, edit and delete reservation
+        - Add and remove (only you own) the orders
+        - Access orders history 
+        - Add, edit and delete orders
         - Access Django admin page: (which involves access to every database and allows to answer costumer messages)
-        ![Homepage](https://github.com/surba778/project-4-restaurant-booking/blob/main/readme-images/home_page.png)
-        ![Homepage without login](https://github.com/surba778/project-4-restaurant-booking/blob/main/readme-images/home_page_without_login.png)
+        ![Homepage with signed in](https://github.com/surba778/greatkart/blob/main/readme-images/signed%20in%20page.png)
 
 ## Future Prospects 
 
@@ -108,6 +106,45 @@ View the live site [here](https://booking2022.herokuapp.com/)
 
 ## Validator Testing
   - [Python validator](http://pep8online.com/) No error occurs.
+  - [HTML Validator](https://validator.w3.org/#validate_by_input).
+  - [CSS Validator](https://jigsaw.w3.org/css-validator/validator).
+
+## Assumptions and Dependencies
+Testing is dependent on the website being deployed live on Heroku.
+
+## Access Requirements
+Tester must have access to the Django Admin panel in order to manually verify the insertion of records into the databases.
+
+## Regression Testing
+Features previously tested during development in a local environment must be regression tested in production on the live website.
+
+## Manual Testing
+All user stories have been included in testing along with each model, each test was ticked off the above list when receiving the expected results.
+
+When manually testing paypal payments it was also important to check if the order still completes or not.
+
+When adding, updating or removing events from the cart the quantity and totals updates correctly. After placing an order the quantity of the sold event also updates reducing the quantity available.
+
+404.html and 500.html both work as expected, this was tested by typing a web address not recognised by the site for 404. For 500 a migration for contact was removed which results in the custom 500 page.
+
+- All Models work correctly.
+- All Forms work correctly.
+- All Links lead to the correct destinations.
+- Quantitys change correctly.
+- Items can be removed from the cart correctly.
+- Cart quantity updates correctly.
+- Default billing in profile can be updated correctly.
+- Emails working correctly.
+- User profiles can be created.
+- Passwords can be reset by email.
+- Admin can view admin only pages, and Users cannot access these pages without superuser status.
+- Events can be added both front and backend correctly.
+- Site responsiveness was tested from mobile, tablet and laptop.
+- Site was tested in iOS, Chrome, Safari, and google chrome browser extension for multi browser testing.
+- All HTML, CSS, Javascript & Python checked and passed validators.
+- All User stories have been completed and tested.
+
+All expected results have passed during manual testing.
 
 # Technologies Used
 
@@ -133,8 +170,6 @@ View the live site [here](https://booking2022.herokuapp.com/)
     - Used to handle payments.
 - [Bootstrap](https://getbootstrap.com/)
     - Used as a framework for styling and to make the site responsive via grid system.
-- [Amazon Web Services](https://aws.amazon.com/)
-    - Used to store static files and images.
 - [SQLite](https://www.sqlite.org/index.html)
     - Database used in development.
 - [PostgreSQL](https://www.postgresql.org/)
@@ -167,43 +202,32 @@ First, ensure the following are set up on your IDE:
 
 To clone the project up locally you can follow the following steps: 
 
-1. Navigate to the repository - [Repository](https://github.com/surba778/project-4-restaurant-booking)
+1. Navigate to the repository - [Repository](https://github.com/surba778/greatkart)
 
 2. Click the code dropdown button and copy the url. 
 
 3. Open the terminal in your IDE and enter the following code: 
     - ```
-        git clone https://github.com/surba778/project-4-restaurant-booking.git
+        git clone https://github.com/surba778/greatkart
         ```
 
 4. Install the dependencies needed to run the application by typing the following command into the terminal: 
     - ```
         pip3 install -r requirements.txt
  
-
-5. Set up the environment variables: 
-    
-    - Inside the env.py file add the following code:
-        - ```
-            import os
-
-            os.enviorn["DATABASE_URL"] = "your database url"
-            os.environ["SECRET_KEY"] = "Your secret key"
-            
-
-6. To set up the database migrate the database models by typing the following commands into the terminal: 
+5. To set up the database migrate the database models by typing the following commands into the terminal: 
     - ```
         python3 manage.py showmigrations
         python3 manage.py makemigrations
         python3 manage.py migrate
         
-7. Create a superuser to have access to the django admin dashboard type the following commands into the terminal:
+6. Create a superuser to have access to the django admin dashboard type the following commands into the terminal:
     - ```
         python3 manage.py createsuperuser
         ```
     - Then set up the account by adding your username, email and password. 
 
-8. Finally, run the app locally by typing the following command into the terminal: 
+7. Finally, run the app locally by typing the following command into the terminal: 
     - ```
         python3 manage.py runserver
         ```
@@ -276,12 +300,12 @@ To clone the project up locally you can follow the following steps:
 14. To set up automatic deployments in Heroku when pushing code to github:
     - On the deploy tab, connect to github by searching for the repository name and clicking 'Connect'.
     - Click 'Enable Automatic Deploys" 
-15. Generate a django secret key at [Djcrety](https://djecrety.ir/) and add it to 'Settings' > 'Config variables' in Heroku.
-16. Update the settings.py file to collect the secret key from the environment, and use an empty string as default: 
+
+15. Update the settings.py file to collect the secret key from the environment, and use an empty string as default: 
     - ```
         SECRET_KEY = os.environ.get('SECRET_KEY', '')
         ```
-17. Set debug to be true only if there's a variable called "DEVELOPMENT" in the environment. 
+16. Set debug to be true only if there's a variable called "DEVELOPMENT" in the environment. 
     - ```
         DEBUG = 'DEVELOPMENT' in os.environ
         ```
