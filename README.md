@@ -5,7 +5,7 @@ This website provides full CRUD functionality to the admin user to add and delet
 
 This website is for educational purposes only.
 
-View the live site [here]()
+View the live site
 
 <br>
 
@@ -371,9 +371,8 @@ To clone the project up locally you can follow the following steps:
 
 - [Django course](https://www.youtube.com/watch?v=PtQiiknWUcI): This youtube walkthrough help me to learn about Django.
 
-- [Reservation model guidance](https://www.youtube.com/watch?v=TuXFAl8aMvc&ab_channel=TechnologyIT): This youtube walkthrough help me to set up the reservation model.
+- [model guidance](https://www.udemy.com/course/django-ecommerce-project-based-course-python-django-web-development/): This walkthrough help me to set up the model.
 
-- [Template](https://themewagon.com/themes/free-bootstrap-4-html5-restaurant-website-template-feane/): I used code from this source to add a template for my project.
 
 ## Acknowledgement
 - Mentors help and advice
