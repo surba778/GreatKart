@@ -13,22 +13,16 @@ from django.contrib.messages import constants as messages
 import os
 from pathlib import Path
 import dj_database_url
-from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-
-
-DEBUG = config('DEBUG', default=True, cast=bool)
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['greatkart-online.herokuapp.com', 'localhost']
 
