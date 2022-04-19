@@ -5,7 +5,7 @@ This website provides full CRUD functionality to the admin user to add and delet
 
 This website is for educational purposes only.
 
-View the live site
+View the live site [here](https://greatkart-online.herokuapp.com/)
 
 <br>
 
@@ -68,8 +68,11 @@ View the live site
     - Dashboard and Logout links (for signed in users) 
     - Login and sign up links (for unsigned users)
         ![Getting home page](https://github.com/surba778/greatkart/blob/main/readme-images/greatkart%20homepage.png)
-
-         
+        ![Admin account page](https://github.com/surba778/greatkart/blob/main/readme-images/admin%20account.png)
+        ![Admin payment page](https://github.com/surba778/greatkart/blob/main/readme-images/admin%20payment%20form.png)
+        ![Admin products page](https://github.com/surba778/greatkart/blob/main/readme-images/admin%20products.png)
+        ![Sign in page](https://github.com/surba778/greatkart/blob/main/readme-images/signed%20in%20page.png)
+       
 ## Signed In Users
 
 - This is a summary of the features available only to login users:
@@ -81,7 +84,10 @@ View the live site
         - Add, edit and delete orders
         - Access Django admin page: (which involves access to every database and allows to answer costumer messages)
         ![Homepage with signed in](https://github.com/surba778/greatkart/blob/main/readme-images/signed%20in%20page.png)
-
+        ![Generated invoice page](https://github.com/surba778/greatkart/blob/main/readme-images/Generated%20invoice.png)
+        ![Billing form](https://github.com/surba778/greatkart/blob/main/readme-images/billing%20form.png)
+        ![Checkout page](https://github.com/surba778/greatkart/blob/main/readme-images/checkout%20page.png)
+        ![Orders page](https://github.com/surba778/greatkart/blob/main/readme-images/my%20orders%20page.png)
 ## Future Prospects 
 
 - Functionality to sort products by rating. 
@@ -106,9 +112,9 @@ View the live site
     - Model containing the user's details for future reservation.
 
 ## Validator Testing
-  - [Python validator](http://pep8online.com/) 
-  - [HTML Validator](https://validator.w3.org/#validate_by_input)
-  - [CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+  - [Python validator](http://pep8online.com/)(https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/pep8%20online.png)
+  - [HTML Validator](https://validator.w3.org/#validate_by_input)(https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/html_valid.jpg)
+  - [CSS Validator](https://jigsaw.w3.org/css-validator/validator)(https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/css%20testing.png)
 
 ## Assumptions and Dependencies
 Testing is dependent on the website being deployed live on Heroku.
