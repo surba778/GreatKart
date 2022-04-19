@@ -312,6 +312,64 @@ To clone the project up locally you can follow the following steps:
     - ```
         SECRET_KEY = config('SECRET_KEY')
         ```
+16. Set debug to be true only if there's a variable called "DEVELOPMENT" in the environment. 
+    - ```
+        DEBUG = 'DEVELOPMENT' in os.environ
+        ```
+
+## AWS Static files storage
+
+### Create a New Bucket
+
+1. Go to to [Amazon AWS](https://aws.amazon.com/) and sign in/sign up. 
+2. From the 'Services' tab on the AWS Management Console, search 'S3' and select it.
+3. Click the 'Create a new bucket' button: 
+    - Enter a bucket name (recommended to be the same name as the Heroku App) and a region (enter the region that is closest to you)
+    - Uncheck the "Block all public access" checkbox and confirm that the Bucket will be public.
+    - Click the "Create bucket" button. 
+4. Bucket settings changed to public access. 
+        1. Go to the Bucket Policy in the permissions tab and added the below permissions:
+            - Bucket policy
+                {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Sid": "PublicReadGetObject",
+                            "Effect": "Allow",
+                            "Principal": "*",
+                            "Action": "s3:GetObject",
+                            "Resource": "arn:aws:s3:::restaurant-booking/*"
+                        }
+                    ]
+                }
+
+        2. Go to the 'Access Control List' section, and set the object permission to 'Everyone'.
+
+### Connect Django to S3
+
+1. To connect the S3 bucket to django install the following packages and add them to the requirements file:
+    - ```
+        pip3 install boto3
+        pip3 install django_storages
+        ```
+       ```
+        pip3 freeze > requirements.txt
+        ```
+    - Add (Django) storages to the list of INSTALLED_APPS in settings.py.
+
+2. Update the settings.py file to tell Django which bucket it should be communicating with.
+    
+    - In Heroku update the config variables: 
+        - USE_AWS =  True 
+        - AWS_ACCESS_KEY_ID = From the IAM user's data CSV file
+        - AWS_SECRET_ACCESS_KEY = From the the IAM user's data CSV file
+    - Remove the DISABLE_COLLECTSTATIC variable to allow django to collect static files and upload them to S3. 
+        ```
+3. In the S3 bucket create a new folder called 'media':
+    - Inside the media folder click "Upload" > "Add files" and select all the products, blog and other images
+    - Select 'Grant public read access to these objects' 
+    - Click through to 'upload'. 
+
 
 # Credits
 
