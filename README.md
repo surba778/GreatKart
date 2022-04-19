@@ -1,7 +1,7 @@
 # Greatkart
 Welcome to Greatkart where you can find inspired clothes products available to buy. This ecommerce store was built using Django and Python, deployed on Heroku.
 
-This website provides full CRUD functionality to the admin user to add and delete products from the purposely built admin panel. Customers are able to view a history of all orders placed from their profile login.
+This website provides full CRUD functionality to the admin user to add and delete products from the purposely built admin panel. Customers are able to view a history of all orders placed from their profile login. The goal of this assignment is to create a web interface that allows users to simply store and access and performance the CRUD (Create, Read, Update, and Delete) actions. This project's goal is to allow users to create, store, modify, and remove posts (CRUD). People that are interested in topics such as travel or planning to live abroad are the target audience for this initiative. Users can create new orders.
 
 This website is for educational purposes only.
 
@@ -88,6 +88,7 @@ View the live site
 - Log in and registration via social media account. 
 - Functionality to 'save' products to a wishlist. 
 - Allow users to delete their account. 
+- Custom branded 500 error page would be nice to add in the future.
 
 <br>
 
@@ -105,9 +106,9 @@ View the live site
     - Model containing the user's details for future reservation.
 
 ## Validator Testing
-  - [Python validator](http://pep8online.com/) No error occurs.
-  - [HTML Validator](https://validator.w3.org/#validate_by_input).
-  - [CSS Validator](https://jigsaw.w3.org/css-validator/validator).
+  - [Python validator](http://pep8online.com/) 
+  - [HTML Validator](https://validator.w3.org/#validate_by_input)
+  - [CSS Validator](https://jigsaw.w3.org/css-validator/validator)
 
 ## Assumptions and Dependencies
 Testing is dependent on the website being deployed live on Heroku.
@@ -125,7 +126,7 @@ When manually testing paypal payments it was also important to check if the orde
 
 When adding, updating or removing events from the cart the quantity and totals updates correctly. After placing an order the quantity of the sold event also updates reducing the quantity available.
 
-404.html and 500.html both work as expected, this was tested by typing a web address not recognised by the site for 404. For 500 a migration for contact was removed which results in the custom 500 page.
+A custom 404 page was created for when the user navigates to a link that doesn't exist.
 
 - All Models work correctly.
 - All Forms work correctly.
@@ -278,7 +279,7 @@ To clone the project up locally you can follow the following steps:
         ```
 9. Type the following into the procfile: 
     - ```
-        web: gunicorn restaurant.wsgi
+        web: gunicorn greatkart.wsgi.application
         ```
 10. Log in into the Heroku terminal:
     - ```
@@ -303,73 +304,14 @@ To clone the project up locally you can follow the following steps:
 
 15. Update the settings.py file to collect the secret key from the environment, and use an empty string as default: 
     - ```
-        SECRET_KEY = os.environ.get('SECRET_KEY', '')
+        SECRET_KEY = config('SECRET_KEY')
         ```
-16. Set debug to be true only if there's a variable called "DEVELOPMENT" in the environment. 
-    - ```
-        DEBUG = 'DEVELOPMENT' in os.environ
-        ```
-
-## AWS Static files storage
-
-### Create a New Bucket
-
-1. Go to to [Amazon AWS](https://aws.amazon.com/) and sign in/sign up. 
-2. From the 'Services' tab on the AWS Management Console, search 'S3' and select it.
-3. Click the 'Create a new bucket' button: 
-    - Enter a bucket name (recommended to be the same name as the Heroku App) and a region (enter the region that is closest to you)
-    - Uncheck the "Block all public access" checkbox and confirm that the Bucket will be public.
-    - Click the "Create bucket" button. 
-4. Bucket settings changed to public access. 
-        1. Go to the Bucket Policy in the permissions tab and added the below permissions:
-            - Bucket policy
-                {
-                    "Version": "2012-10-17",
-                    "Statement": [
-                        {
-                            "Sid": "PublicReadGetObject",
-                            "Effect": "Allow",
-                            "Principal": "*",
-                            "Action": "s3:GetObject",
-                            "Resource": "arn:aws:s3:::restaurant-booking/*"
-                        }
-                    ]
-                }
-
-        2. Go to the 'Access Control List' section, and set the object permission to 'Everyone'.
-
-### Connect Django to S3
-
-1. To connect the S3 bucket to django install the following packages and add them to the requirements file:
-    - ```
-        pip3 install boto3
-        pip3 install django_storages
-        ```
-       ```
-        pip3 freeze > requirements.txt
-        ```
-    - Add (Django) storages to the list of INSTALLED_APPS in settings.py.
-
-2. Update the settings.py file to tell Django which bucket it should be communicating with.
-    
-    - In Heroku update the config variables: 
-        - USE_AWS =  True 
-        - AWS_ACCESS_KEY_ID = From the IAM user's data CSV file
-        - AWS_SECRET_ACCESS_KEY = From the the IAM user's data CSV file
-    - Remove the DISABLE_COLLECTSTATIC variable to allow django to collect static files and upload them to S3. 
-        ```
-3. In the S3 bucket create a new folder called 'media':
-    - Inside the media folder click "Upload" > "Add files" and select all the products, blog and other images
-    - Select 'Grant public read access to these objects' 
-    - Click through to 'upload'. 
 
 # Credits
 
 ## Code
 
 - [Code Institute](https://codeinstitute.net/): for git template IDE and heroku deployment instructions.
-
-- [Django course](https://www.youtube.com/watch?v=PtQiiknWUcI): This youtube walkthrough help me to learn about Django.
 
 - [model guidance](https://www.udemy.com/course/django-ecommerce-project-based-course-python-django-web-development/): This walkthrough help me to set up the model.
 
