@@ -149,7 +149,6 @@ A custom 404 page was created for when the user navigates to a link that doesn't
 - Site responsiveness was tested from mobile, tablet and laptop.
 - Site was tested in iOS, Chrome, Safari, and google chrome browser extension for multi browser testing.
 - All HTML, CSS, Javascript & Python checked and passed validators.
-- All User stories have been completed and tested.
 
 All expected results have passed during manual testing.
 
