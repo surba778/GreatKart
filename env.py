@@ -4,6 +4,4 @@ os.environ["DATABASE_URL"] = "postgres://fwzdbsstqlirbn:6b3cd8b429d72e4fcb04f2f0
 os.environ["SECRET_KEY"] = "randomSecretKey2023"
 os.environ["DEVELOPMENT"] = "True"
 os.environ["USE_AWS"] = "True"
-os.environ["AWS_ACCESS_KEY_ID"] = "AKIAYKBGXAKPVHOPUXFT"
-os.environ["AWS_SECRET_ACCESS_KEY"] = "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"
 os.environ["DISABLE_COLLECTSTATIC"] = "1"
