@@ -372,12 +372,39 @@ To clone the project up locally you can follow the following steps:
 
 # Credits
 
-## Code
+## Technology used
+- [Django 4.0](https://docs.djangoproject.com/en/4.0/)
+- [Python](https://www.python.org/)
+- [Docker](https://www.docker.com/)
+- HTML
+- CSS
+- Javascript
+- [PostgreSQL](https://www.postgresql.org/) - Database used to store data models
+- [Gunicorn](https://gunicorn.org/)
+- [Git](https://git-scm.com/) - Version control.
+- [Github](https://github.com/) - Used to host repository and live site.
+- [Gitpod IDE](https://gitpod.io/) - Development enviornment used to build site.
 
+## Frameworks
+- [Bootstrap](https://getbootstrap.com/) - CSS Framework used to format most of the elements in the site.
+- [JQuery](https://jqueryui.com/) - Javascript library
+- [Font Awesome](https://fontawesome.com/) - Resource for icons used throughout the site.
+- [Django-allauth](https://www.intenct.nl/projects/django-allauth/)
+- [Django-crispy-forms](https://github.com/django-crispy-forms/django-crispy-forms)
+- [Django-humanize](https://docs.djangoproject.com/en/4.0/ref/contrib/humanize/)
+
+## Third party services
+- [Heroku](https://www.heroku.com/) - Cloud service hosting the deployed site.
+- [Amazon Web Services](https://aws.amazon.com/) - Cloud service hosting static and media files.
+- [Pep8 validator](http://pep8online.com/) - Used to validate code and check for errors.
+
+## Resources
+
+- [Django 3 By Example - Third Edition by Antonio Melé](https://www.packtpub.com/product/django-3-by-example-third-edition/9781838981952)
 - [Code Institute](https://codeinstitute.net/): for git template IDE and heroku deployment instructions.
-
-- [model guidance](https://www.udemy.com/course/django-ecommerce-project-based-course-python-django-web-development/): This walkthrough help me to set up the model.
-
+- [Django 4.0 Documentation](https://docs.djangoproject.com/en/4.0/)
+- [W3Schools](https://www.w3schools.com/)
+- [Stackoverflow.com](https://stackoverflow.com/)
 
 ## Acknowledgement
 - Mentors help and advice
