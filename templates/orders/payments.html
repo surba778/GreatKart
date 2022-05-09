@@ -166,6 +166,17 @@
 		},
 
 		// Set up the transaction
+		createOrder: function(data, actions) {
+			return actions.order.create({
+				purchase_units: [{
+					amount: {
+						value: amount,
+					}
+				}]
+			});
+		},
+
+		// Set up the transaction
 		createOrder: function (data, actions) {
 			return actions.order.create({
 				purchase_units: [{
