@@ -160,7 +160,7 @@
 
 		style: {
 			color: 'blue',
-			shape: 'pill',
+			shape: 'rect',
 			label: 'pay',
 			height: 40
 		},
@@ -176,16 +176,6 @@
 			});
 		},
 
-		// Set up the transaction
-		createOrder: function (data, actions) {
-			return actions.order.create({
-				purchase_units: [{
-					amount: {
-						value: amount,
-					}
-				}]
-			});
-		},
 
 		// Finalize the transaction
 		onApprove: function (data, actions) {
