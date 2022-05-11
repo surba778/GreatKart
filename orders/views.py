@@ -12,8 +12,8 @@ from django.template.loader import render_to_string
 
 def payments(request):
     body = json.loads(request.body)
-    order = Order.objects.get(
-        user=request.user, is_ordered=False, order_number=body['orderID'])
+    order = Order.objects.get(user=request.user, is_ordered=False, order_number=body['orderID'])
+
 
     # Store transaction details inside Payment model
     payment = Payment(
