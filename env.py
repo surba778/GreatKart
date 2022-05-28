@@ -5,3 +5,9 @@ os.environ["SECRET_KEY"] = "randomSecretKey2023"
 os.environ["DEVELOPMENT"] = "True"
 os.environ["USE_AWS"] = "True"
 os.environ["DISABLE_COLLECTSTATIC"] = "1"
+
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ""
+EMAIL_USE_TLS = "True"
