@@ -19,6 +19,8 @@ View the live site [here](https://greatkart-online.herokuapp.com/)
   * [Future Prospects](#future-prospects)
 - [Database](#database)
 - [Testing]
+- [Search engine optimization]
+- [Web marketing]
 - [Technologies Used](#technologies-used)
   * [Languages](#languages-used)
   * [Libraries & Integrations](#frameworks-libraries-and-programs)
@@ -151,6 +153,26 @@ A custom 404 page was created for when the user navigates to a link that doesn't
 - All HTML, CSS, Javascript & Python checked and passed validators.
 
 All expected results have passed during manual testing.
+
+# Search Engine Optimalization
+
+SEO techniques were implemented to the best of my ability. The site has been equipped with sitemap generated [here](https://www.xml-sitemaps.com/) and robots.txt. 
+
+The site also has privacy policy and terms of service - both documents generated [here](https://policymaker.io/)
+
+## Web Marketing
+
+### Newsletter
+
+The Page owner can send regular interesting content containing advice on greatkart to the subscribers. 
+
+I wanted to give the visitor a freedom to sign up to the newsletter.
+
+### Facebook
+
+This greatkart utilises [facebook](https://www.facebook.com/GreatKart-112825531400432/?notif_id=1658169648191913&notif_t=page_user_activity&ref=notif) for marketing purposes to post adverts, interesting content and get users engaged.
+
+![facebook main banner](Readme_docs/facebook/greatkart%20fb%20page.png)
 
 # Technologies Used
 
