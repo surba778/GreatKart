@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import RegistrationForm, UserForm, UserProfileForm
 from .models import Account, UserProfile
-from orders.models import Order, OrderProduct
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
@@ -112,13 +111,11 @@ def activate(request, uidb64, token):
 
 @login_required(login_url='login')
 def dashboard(request):
-    orders = Order.objects.order_by(
-        '-created_at').filter(user_id=request.user.id, is_ordered=True)
-    orders_count = orders.count()
+    
 
     userprofile = UserProfile.objects.get(user_id=request.user.id)
     context = {
-        'orders_count': orders_count,
+        
         'userprofile': userprofile,
     }
     return render(request, 'accounts/dashboard.html', context)
