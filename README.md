@@ -39,7 +39,7 @@ View the live site [here](https://greatkart-online.herokuapp.com/)
 
 ## User Stories
 
-#### As a Customer:
+### As a Customer:
 
 - Website experience:
 
@@ -54,9 +54,29 @@ View the live site [here](https://greatkart-online.herokuapp.com/)
     1. I want to save my details to a user profile.
     2. I want to be able to see my previous orders details.
 
+###  Navigation
+- As a User I can immediately understand the website's purpose so that I know if it's what I'm looking for.
+- As a User I can navigate around the site so that I can easily view desired content.
+- As a User I can view a list of products so that I can choose one to purchase.
+- As a User I can click on a product so that I can read the product details.
+- As a User I can search products so that I can find specific products I'm looking for.
+
+### User's review
+- As a User I can write a review and post it so that other users can view them.
+- As a User I can view my reviews so that I can see and manage all reviews I have created.
+
+### User Interaction
+- As a User I can write a review on products so that I can give my feedback to others.
+- As a User I can view the number of reviews on a products so that I can see which is most popular.
+
+### Sign in
+- As a User I can register for an account so that I can begin to use the services.
+- As a User I can log in/out so that I can like products, comment on products and manage my products.
+- As a User I can see my login status so that I know if I'm logged in or out.
+
     <br>
 
-#### As the owner of the Website:
+### As the owner of the Website:
 
   1. I want to be able to add products with ease.
   2. I want to be able to edit and delete the orders.
@@ -135,6 +155,7 @@ When manually testing paypal payments it was also important to check if the orde
 When adding, updating or removing events from the cart the quantity and totals updates correctly. After placing an order the quantity of the sold event also updates reducing the quantity available.
 
 A custom 404 page was created for when the user navigates to a link that doesn't exist.
+![404 error page](readme-images/404 page.png)
 
 - All Models work correctly.
 - All Forms work correctly.
@@ -219,7 +240,44 @@ This greatkart utilises [facebook](https://www.facebook.com/GreatKart-1128255314
 
 <br>
 
+# Wireframes
+
+Wireframes for each page are linked here:
+
+*[Home Page](readme-images/wireframe%20homepage.png)
+*[Order info](readme-images/wireframe%20order%20info.png)
+
 # Deployment
+
+This project was deployed using Github and Heroku.
+
+- ## Github 
+
+    To create a new repository I took the following steps:
+
+    1. Logged into Github.
+    2. Clicked over to the ‘repositories’ section.
+    3. Clicked the green ‘new’ button. This takes you to the create new repository page.
+    4. Once there under ‘repository template’ I chose the code institute template from the dropdown menu.
+    5. I input a repository name then clicked the green ‘create repository button’ at the bottom of the page.
+    6. Once created I opened the new repository and clicked the green ‘Gitpod’ button to create a workspace in Gitpod for editing.
+    
+- ## Forking
+
+    To fork my project you must;
+    1. Sign in to Github and go to my [repository](https://github.com/surba778/greatkart)
+    2. Locate the Fork button at the top right of the page.
+    3. Select this. 
+    4. The fork is now in your repositories.
+
+- ## Clone
+    To clone my project you must;
+
+    1. Sign in to Github and go to my [repository](https://github.com/surba778/greatkart)
+    2. Above the list of files click the green ‘code’ button.
+    3. This will bring up a few options as to how you would like to clone. You can select HTTPS, SSH or Github CLI, then click the clipboard icon to copy the URL.
+    4. Open git bash
+    5. Type ‘git clone’ and then paste the URL you copied. Press Enter.
 
 ## Set up project locally
 
@@ -396,12 +454,18 @@ To clone the project up locally you can follow the following steps:
 
 ## Technology used
 - [Django 4.0](https://docs.djangoproject.com/en/4.0/)
-- [Python](https://www.python.org/)
+    * Django was used as the python framework in the project.
+    * Django all auth was used to handle user authentication and related tasks i.e. sign in, sign up, sign out.
+- [Python](https://www.python.org/) 
+    * The packages installed for the is project can be found in [the requirements.txt](requirements.txt)
 - [Docker](https://www.docker.com/)
 - HTML
+    * HTML was the base language used to layout the skeleton of all templates.
 - CSS
+    * Custom CSS used to style the page and make the appearance look a little more unique.
 - Javascript
-- [PostgreSQL](https://www.postgresql.org/) - Database used to store data models
+    * I have used Javascript throughout to manipulate the DOM and communicate to the backend to create, read, update, and delete data from the database.
+- [PostgreSQL](https://www.postgresql.org/) - Used for the database during development and in deployment.
 - [Gunicorn](https://gunicorn.org/)
 - [Git](https://git-scm.com/) - Version control.
 - [Github](https://github.com/) - Used to host repository and live site.
@@ -416,7 +480,7 @@ To clone the project up locally you can follow the following steps:
 - [Django-humanize](https://docs.djangoproject.com/en/4.0/ref/contrib/humanize/)
 
 ## Third party services
-- [Heroku](https://www.heroku.com/) - Cloud service hosting the deployed site.
+- [Heroku](https://www.heroku.com/) - Used to deploy the page and make it publicly available.
 - [Amazon Web Services](https://aws.amazon.com/) - Cloud service hosting static and media files.
 - [Pep8 validator](http://pep8online.com/) - Used to validate code and check for errors.
 
