@@ -14,6 +14,7 @@ View the live site [here](https://greatkart-online.herokuapp.com/)
 - [User experience](#user-experience)
   * [User Stories](#user-stories)
 - [Wireframes]
+- [Database schema]
 - [Features](#features)
   * [Current Features](#current-features)
   * [Signed In Users](#signed-in-users)
@@ -127,6 +128,7 @@ The following user stories were satisfied by downloading the Django Allauth appl
 
 # Database schema
 ![Database schema](readme-images/Database%20schema.png)
+
 # Features
 
 - ### All apps 
