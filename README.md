@@ -13,6 +13,7 @@ View the live site [here](https://greatkart-online.herokuapp.com/)
 
 - [User experience](#user-experience)
   * [User Stories](#user-stories)
+- [Wireframes]
 - [Features](#features)
   * [Current Features](#current-features)
   * [Signed In Users](#signed-in-users)
@@ -36,6 +37,18 @@ View the live site [here](https://greatkart-online.herokuapp.com/)
   * [Acknowledgements](#acknowledgements)
 
 # User experience
+
+## Site purpose
+    The intent of this site is to do online shopping.
+## Site Goal
+    To build a platform that allows users to easily share their comments and do shopping.
+## Communication
+    With a clean, easy to follow layout, the users are guided through the features of the website with an ease of navigation.
+## Future Goals
+    To create a profile page for each user.
+    To view all the booked orders created by an user on their profile page.
+    To allow users to follow discounts and new updates by entering their email in the newsletter so that they will get email notifications.
+
 
 ## User Stories
 
@@ -82,7 +95,38 @@ View the live site [here](https://greatkart-online.herokuapp.com/)
   2. I want to be able to edit and delete the orders.
   3. I want to have access to an admin page. 
   4. I want to be able to delete inappropriate orders as well.
-  
+
+In order to demonstrate an Agile approach to this project, GitHub issues were used as a Kanban board to record the user stories. The user stories were categorised into different User functions between the Admin and the User and each issue would be moved from the "to-do" board to the "done" board as the project progressed.
+
+The Project Kanban board.
+ [Kanban board](readme-images/kanban board.png)
+
+## User stories - Admin features
+
+The following user stories were satisfied by the creation of the Restaurant app, which include these features:
+
+[User Story #11](https://github.com/surba778/greatkart/issues/11) As a administrator I can click on the navbar and select "login" so that I can make a booking on behalf of a customer.
+
+[User Story #12](https://github.com/surba778/greatkart/issues/12) As a administrator I can view pending customer bookings so that I can approve or reject reservation requests.
+
+## User stories - User features
+
+The following user stories were satisfied by downloading the Django Allauth application which provides the project with built in tools to manage authentication, registration and account management:
+
+[User story #13](https://github.com/surba778/greatkart/issues/13) As a User I can click on navbar and select "register" so that I can create a personal account.
+
+[User story #14](https://github.com/surba778/greatkart/issues/14) As a User I can login by inserting my email and password so that I can create a booking.
+
+# Wireframes
+![Homepage](readme-images/wireframe%20homepage.png)
+![Order info](readme-images/wireframe%20order%20info.png)
+![Checkout page](readme-images/checkout%20wireframe%20page.png)
+![Shopping cart](readme-images/wireframe%20shopping%20cart.png)
+![Products page](readme-images/wireframe%20products%20page.png)
+![Mobile page](readme-images/wireframe%20mobile.png)
+
+# Database schema
+![Database schema](readme-images/Database%20schema.png)
 # Features
 
 - ### All apps 
@@ -110,6 +154,13 @@ View the live site [here](https://greatkart-online.herokuapp.com/)
         ![Billing form](https://github.com/surba778/greatkart/blob/main/readme-images/billing%20form.png)
         ![Checkout page](https://github.com/surba778/greatkart/blob/main/readme-images/checkout%20page.png)
         ![Orders page](https://github.com/surba778/greatkart/blob/main/readme-images/my%20orders%20page.png)
+        ![New registration](readme-images/new%20registration.png)
+        ![Payment successful page](readme-images/Payment%20successful%20page.png)
+
+### The Admin View
+Employing all CRUD features - The administrator can Create, Read, Update and Delete any of these tables.
+![Admin view](readme-images/Admin%20view.png)
+
 ## Future Prospects 
 
 - Functionality to sort products by rating. 
@@ -136,7 +187,8 @@ View the live site [here](https://greatkart-online.herokuapp.com/)
 ## Validator Testing
   - [Python validator](http://pep8online.com/)(https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/pep8%20online.png)
   - [HTML Validator](https://validator.w3.org/#validate_by_input)(https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/html_valid.jpg)
-  - [CSS Validator](https://jigsaw.w3.org/css-validator/validator)(https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/css%20testing.png)
+  - [CSS Validator](https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/css%20testing.png)
+  - ![Lighthouse test](readme-images/Lighthouse%20test.png)
 
 ## Assumptions and Dependencies
 Testing is dependent on the website being deployed live on Heroku.
@@ -237,15 +289,9 @@ This greatkart utilises [facebook](https://www.facebook.com/GreatKart-1128255314
     - Used to store the project code after being pushed from Git.
 - [Git](https://git-scm.com/) 
     - Used for version control to commit to Git and Push to GitHub.
+- Balsamique was used to create the wireframes as part of the project scoping phase of this project
 
 <br>
-
-# Wireframes
-
-Wireframes for each page are linked here:
-
-*[Home Page](readme-images/wireframe%20homepage.png)
-*[Order info](readme-images/wireframe%20order%20info.png)
 
 # Deployment
 
@@ -452,25 +498,6 @@ To clone the project up locally you can follow the following steps:
 
 # Credits
 
-## Technology used
-- [Django 4.0](https://docs.djangoproject.com/en/4.0/)
-    * Django was used as the python framework in the project.
-    * Django all auth was used to handle user authentication and related tasks i.e. sign in, sign up, sign out.
-- [Python](https://www.python.org/) 
-    * The packages installed for the is project can be found in [the requirements.txt](requirements.txt)
-- [Docker](https://www.docker.com/)
-- HTML
-    * HTML was the base language used to layout the skeleton of all templates.
-- CSS
-    * Custom CSS used to style the page and make the appearance look a little more unique.
-- Javascript
-    * I have used Javascript throughout to manipulate the DOM and communicate to the backend to create, read, update, and delete data from the database.
-- [PostgreSQL](https://www.postgresql.org/) - Used for the database during development and in deployment.
-- [Gunicorn](https://gunicorn.org/)
-- [Git](https://git-scm.com/) - Version control.
-- [Github](https://github.com/) - Used to host repository and live site.
-- [Gitpod IDE](https://gitpod.io/) - Development enviornment used to build site.
-
 ## Frameworks
 - [Bootstrap](https://getbootstrap.com/) - CSS Framework used to format most of the elements in the site.
 - [JQuery](https://jqueryui.com/) - Javascript library
@@ -491,6 +518,8 @@ To clone the project up locally you can follow the following steps:
 - [Django 4.0 Documentation](https://docs.djangoproject.com/en/4.0/)
 - [W3Schools](https://www.w3schools.com/)
 - [Stackoverflow.com](https://stackoverflow.com/)
+- [Code institute](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
+- [Udemy](https://www.udemy.com/)
 
 ## Acknowledgement
 - Mentors help and advice
