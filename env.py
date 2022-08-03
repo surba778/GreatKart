@@ -1,8 +1,9 @@
 import os
 
-os.environ["DATABASE_URL"] = "postgres://yzdvvzihdserze:063d6ad09dd7d5aa757344e9ce5889919f4d7116ae8ca226e18601d1e7c5fa3b@ec2-176-34-215-248.eu-west-1.compute.amazonaws.com:5432/dak28k1vve1ht7"
-os.environ["SECRET_KEY"] = "randomSecretKey2023"
+os.environ["DATABASE_URL"] = "postgres://seqpjplrxblhjx:c60ed82730a965cf2ab0ec98e59b8a61eb10d4a50b5e075d0eb3699a725383a1@ec2-54-246-185-161.eu-west-1.compute.amazonaws.com:5432/da4456msaspsor"
+os.environ["SECRET_KEY"] = "R2IQsZl2Lw"
 os.environ["DEVELOPMENT"] = "True"
+os.environ["USE_AWS"] = "True"
 
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
