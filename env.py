@@ -1,6 +1,6 @@
 import os
 
-os.environ["DATABASE_URL"] = "postgres://fwzdbsstqlirbn:6b3cd8b429d72e4fcb04f2f061c9e2f91d784b6d21c3b29012c363b6c68ccae9@ec2-99-80-170-190.eu-west-1.compute.amazonaws.com:5432/d9erhijfve6vbi"
+os.environ["DATABASE_URL"] = "postgres://okaqqdsybzkziq:0ac79d21ffb4465b49d1afe9b7a5c61e6d0ef78d8a45eca72351fdd78652708d@ec2-3-248-121-12.eu-west-1.compute.amazonaws.com:5432/d9kpdir1i6cpej"
 os.environ["SECRET_KEY"] = "randomSecretKey2023"
 os.environ["DEVELOPMENT"] = "True"
 os.environ["USE_AWS"] = "True"
