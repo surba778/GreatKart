@@ -4,6 +4,7 @@ os.environ["DATABASE_URL"] = "postgres://seqpjplrxblhjx:c60ed82730a965cf2ab0ec98
 os.environ["SECRET_KEY"] = "R2IQsZl2Lw"
 os.environ["DEVELOPMENT"] = "True"
 os.environ["USE_AWS"] = "True"
+os.environ["DISABLE_COLLECTSTATIC"] = "1"
 
 
 EMAIL_HOST = "smtp.gmail.com"
