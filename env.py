@@ -5,10 +5,13 @@ os.environ["SECRET_KEY"] = "R2IQsZl2Lw"
 os.environ["DEVELOPMENT"] = "True"
 os.environ["USE_AWS"] = "True"
 os.environ["DISABLE_COLLECTSTATIC"] = "1"
+os.environ["DEVELOPMENT"] = True
 
 
-EMAIL_HOST = "smtp.gmail.com"
+
+EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = ""
-EMAIL_HOST_PASSWORD = ""
-EMAIL_USE_TLS = "True"
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
