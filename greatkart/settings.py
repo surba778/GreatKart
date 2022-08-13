@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'category',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -44,8 +43,8 @@ INSTALLED_APPS = [
     'store',
     'carts',
     'accounts',
-    'profiles',
     'orders',
+    'category',
     
     # other
     'storages',
@@ -118,7 +117,7 @@ AUTH_USER_MODEL = 'accounts.Account'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
