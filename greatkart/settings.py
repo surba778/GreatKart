@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     
     # other
     'storages',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -177,7 +178,7 @@ if 'USE_AWS' in os.environ:
         'CacheControl': 'max-age=94608000',
     }
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'greatkart-online'
+    AWS_STORAGE_BUCKET_NAME = 'kart-2022'
     AWS_S3_REGION_NAME = 'us-east-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
