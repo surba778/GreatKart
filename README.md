@@ -5,7 +5,7 @@ This website provides full CRUD functionality to the admin user to add and delet
 
 This website is for educational purposes only.
 
-View the live site [here](https://greatkart-online.herokuapp.com/)
+View the live site [here](https://kart2022.herokuapp.com/)
 
 <br>
 
