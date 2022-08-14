@@ -13,16 +13,16 @@ View the live site [here](https://kart2022.herokuapp.com/)
 
 - [User experience](#user-experience)
   * [User Stories](#user-stories)
-- [Wireframes]
-- [Database schema]
+- [Wireframes](#wireframes)
+- [Database schema](#Database-schema)
 - [Features](#features)
   * [Current Features](#current-features)
   * [Signed In Users](#signed-in-users)
   * [Future Prospects](#future-prospects)
 - [Database](#database)
-- [Testing]
-- [Search engine optimization]
-- [Web marketing]
+- [Testing](#testing)
+- [Search engine optimization](#search-engine-optimalization)
+- [Web marketing](#web-marketing)
 - [Technologies Used](#technologies-used)
   * [Languages](#languages-used)
   * [Libraries & Integrations](#frameworks-libraries-and-programs)
@@ -30,7 +30,6 @@ View the live site [here](https://kart2022.herokuapp.com/)
   * [Set up project locally](#set-up-project-locally)
   * [Deploy to Heroku](#deploy-to-heroku)
   * [AWS Static files storage](#aws-static-files-storage)
-  * [Connect Stripe to Heroku](#connect-stripe-to-heroku)
 - [Credits](#credits)
   * [Code](#code)
   * [Content](#content)
@@ -88,7 +87,7 @@ View the live site [here](https://kart2022.herokuapp.com/)
 - As a User I can log in/out so that I can like products, comment on products and manage my products.
 - As a User I can see my login status so that I know if I'm logged in or out.
 
-    <br>
+
 
 ### As the owner of the Website:
 
@@ -100,7 +99,7 @@ View the live site [here](https://kart2022.herokuapp.com/)
 In order to demonstrate an Agile approach to this project, GitHub issues were used as a Kanban board to record the user stories. The user stories were categorised into different User functions between the Admin and the User and each issue would be moved from the "to-do" board to the "done" board as the project progressed.
 
 The Project Kanban board.
- [Kanban board](readme-images/kanban board.png)
+ ![Kanban board](readme-images/Kanban%20board.png)
 
 ## User stories - Admin features
 
@@ -135,11 +134,11 @@ The following user stories were satisfied by downloading the Django Allauth appl
 
     - Dashboard and Logout links (for signed in users) 
     - Login and sign up links (for unsigned users)
-        ![Getting home page](https://github.com/surba778/greatkart/blob/main/readme-images/greatkart%20homepage.png)
-        ![Admin account page](https://github.com/surba778/greatkart/blob/main/readme-images/admin%20account.png)
-        ![Admin payment page](https://github.com/surba778/greatkart/blob/main/readme-images/admin%20payment%20form.png)
-        ![Admin products page](https://github.com/surba778/greatkart/blob/main/readme-images/admin%20products.png)
-        ![Sign in page](https://github.com/surba778/greatkart/blob/main/readme-images/signed%20in%20page.png)
+        ![Getting home page](readme-images/greatkart%20homepage.png)
+        ![Admin account page](readme-images/admin%20account.png)
+        ![Admin payment page](readme-images/admin%20payment%20form.png)
+        ![Admin products page](readme-images/admin%20products.png)
+        ![Sign in page](readme-images/signed%20in%20page.png)
        
 ## Signed In Users
 
@@ -151,13 +150,13 @@ The following user stories were satisfied by downloading the Django Allauth appl
         - Access orders history 
         - Add, edit and delete orders
         - Access Django admin page: (which involves access to every database and allows to answer costumer messages)
-        ![Homepage with signed in](https://github.com/surba778/greatkart/blob/main/readme-images/signed%20in%20page.png)
-        ![Generated invoice page](https://github.com/surba778/greatkart/blob/main/readme-images/Generated%20invoice.png)
-        ![Billing form](https://github.com/surba778/greatkart/blob/main/readme-images/billing%20form.png)
-        ![Checkout page](https://github.com/surba778/greatkart/blob/main/readme-images/checkout%20page.png)
-        ![Orders page](https://github.com/surba778/greatkart/blob/main/readme-images/my%20orders%20page.png)
-        ![New registration](readme-images/new%20registration.png)
-        ![Payment successful page](readme-images/Payment%20successful%20page.png)
+        [Homepage with signed in](https://github.com/surba778/greatkart/blob/main/readme-images/signed%20in%20page.png)
+        [Generated invoice page](https://github.com/surba778/greatkart/blob/main/readme-images/Generated%20invoice.png)
+        [Billing form](https://github.com/surba778/greatkart/blob/main/readme-images/billing%20form.png)
+        [Checkout page](https://github.com/surba778/greatkart/blob/main/readme-images/checkout%20page.png)
+        [Orders page](https://github.com/surba778/greatkart/blob/main/readme-images/my%20orders%20page.png)
+        [New registration](readme-images/new%20registration.png)
+        [Payment successful page](readme-images/Payment%20successful%20page.png)
 
 ### The Admin View
 Employing all CRUD features - The administrator can Create, Read, Update and Delete any of these tables.
@@ -269,7 +268,7 @@ This greatkart utilises [facebook](https://www.facebook.com/GreatKart-1128255314
     - Used to populate the countries select field on the order form and profile form.
 - [Coverage](https://pypi.org/project/coverage/)
     - Used to produce a testing report.
-- [Stripe](https://stripe.com/gb)
+- [Paypal](https://paypal.com/gb)
     - Used to handle payments.
 - [Bootstrap](https://getbootstrap.com/)
     - Used as a framework for styling and to make the site responsive via grid system.
