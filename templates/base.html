@@ -101,7 +101,6 @@
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                <a href="{% url 'mail_letter' %}" class="dropdown-item">Mail Newsletter</a>
                             {% endif %}
                             <a href="" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -128,6 +127,15 @@
             </ul>
         </div>
     </div>
+    <div class="row bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          {% include 'includes/mobile-top-header.html' %}
+          {% include 'includes/main-nav.html' %}
+      </nav>
+  </div>
     </header>
 
     {% if messages %}
@@ -144,14 +152,11 @@
     {% endblock %}
 
     <!-- footer -->
-    {% include 'includes/footer.html' %}
     <footer class="container-wrapper">
       <div class="container quotes-container content-container">
         <section class="footer">
           <div class="row">
             <div class="col-12 page-header mb-4">
-              <h2 class="text-uppercase">Stay in touch:
-              </h2>
               <hr class="block-divider block-divider--short">
             </div>
           </div>
