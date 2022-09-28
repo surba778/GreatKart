@@ -8,6 +8,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+if os.path.exists('env.py'):
+    import env
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'contact',
+    'products',
 
     # Other
     'crispy_forms',
@@ -55,6 +58,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'greatkart.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -106,10 +111,12 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'greatkart.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
+    print('Connecting to Postgres')
     DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
+    print('Connecting to Sqlite3')
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -117,29 +124,23 @@ else:
         }
     }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.' +
-        'UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.' +
-        'MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.' +
-        'CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.' +
-        'NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -153,7 +154,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -188,7 +188,6 @@ if 'USE_AWS' in os.environ:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
