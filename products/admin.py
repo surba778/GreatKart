@@ -5,16 +5,12 @@ from .models import Product, Category
 class ProductAdmin(admin.ModelAdmin):
     # fields to display within admin dash
     list_display = (
-        'sku',
         'name',
         'category',
         'price',
         'rating',
         'image',
     )
-    # sort products by sku
-    ordering = ('sku',)
-
 
 class CategoryAdmin(admin.ModelAdmin):
     # fields to display within admin dash
