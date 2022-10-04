@@ -103,7 +103,7 @@ The Project Kanban board.
 
 ## User stories - Admin features
 
-The following user stories were satisfied by the creation of the Restaurant app, which include these features:
+The following user stories were satisfied, which include these features:
 
 [User Story #11](https://github.com/surba778/greatkart/issues/11) As a administrator I can click on the navbar and select "login" so that I can make a booking on behalf of a customer.
 
@@ -126,7 +126,7 @@ The following user stories were satisfied by downloading the Django Allauth appl
 ![Mobile page](readme-images/wireframe%20mobile.png)
 
 # Database schema
-![Database schema](readme-images/Database%20schema.png)
+![Database schema]()
 
 # Features
 
@@ -134,11 +134,10 @@ The following user stories were satisfied by downloading the Django Allauth appl
 
     - Dashboard and Logout links (for signed in users) 
     - Login and sign up links (for unsigned users)
-        ![Getting home page](readme-images/greatkart%20homepage.png)
-        ![Admin account page](readme-images/admin%20account.png)
-        ![Admin payment page](readme-images/admin%20payment%20form.png)
-        ![Admin products page](readme-images/admin%20products.png)
-        ![Sign in page](readme-images/signed%20in%20page.png)
+        [Getting home page]()
+        [Admin account page](https://github.com/surba778/greatkart/blob/main/readme-images/admin%20page.jpg)  
+        [Admin products page]()
+        [Sign in page]()
        
 ## Signed In Users
 
@@ -150,17 +149,17 @@ The following user stories were satisfied by downloading the Django Allauth appl
         - Access orders history 
         - Add, edit and delete orders
         - Access Django admin page: (which involves access to every database and allows to answer costumer messages)
-        [Homepage with signed in](https://github.com/surba778/greatkart/blob/main/readme-images/signed%20in%20page.png)
-        [Generated invoice page](https://github.com/surba778/greatkart/blob/main/readme-images/Generated%20invoice.png)
-        [Billing form](https://github.com/surba778/greatkart/blob/main/readme-images/billing%20form.png)
-        [Checkout page](https://github.com/surba778/greatkart/blob/main/readme-images/checkout%20page.png)
-        [Orders page](https://github.com/surba778/greatkart/blob/main/readme-images/my%20orders%20page.png)
-        [New registration](readme-images/new%20registration.png)
-        [Payment successful page](readme-images/Payment%20successful%20page.png)
+        [Homepage with signed in]()
+        [Generated invoice page]()
+        [Billing form]()
+        [Checkout page]()
+        [Orders page]()
+        [New registration]()
+        [Payment successful page](https://github.com/surba778/greatkart/blob/main/readme-images/purchase%20confirmation.jpg)
 
 ### The Admin View
 Employing all CRUD features - The administrator can Create, Read, Update and Delete any of these tables.
-![Admin view](readme-images/Admin%20view.png)
+![Admin view]()
 
 ## Future Prospects 
 
@@ -189,7 +188,7 @@ Employing all CRUD features - The administrator can Create, Read, Update and Del
   - [Python validator](http://pep8online.com/)(https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/pep8%20online.png)
   - [HTML Validator](https://validator.w3.org/#validate_by_input)(https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/html_valid.jpg)
   - [CSS Validator](https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/css%20testing.png)
-  - ![Lighthouse test](readme-images/Lighthouse%20test.png)
+  - [Lighthouse test]()
 
 ## Assumptions and Dependencies
 Testing is dependent on the website being deployed live on Heroku.
