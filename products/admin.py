@@ -2,6 +2,8 @@ from django.contrib import admin
 from .models import Product, Category
 
 # Register your models here.
+
+
 class ProductAdmin(admin.ModelAdmin):
     # fields to display within admin dash
     list_display = (
@@ -11,6 +13,7 @@ class ProductAdmin(admin.ModelAdmin):
         'rating',
         'image',
     )
+
 
 class CategoryAdmin(admin.ModelAdmin):
     # fields to display within admin dash

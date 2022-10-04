@@ -1,5 +1,5 @@
 # Greatkart
-Welcome to Greatkart where you can find inspired clothes products available to buy. This ecommerce store was built using Django and Python, deployed on Heroku.
+Welcome to Greatkart where you can find inspired clothes products available to buy. This (B2C)e-commerce store was built using Django and Python, deployed on Heroku.
 
 This website provides full CRUD functionality to the admin user to add and delete products from the purposely built admin panel. Customers are able to view a history of all orders placed from their profile login. The goal of this assignment is to create a web interface that allows users to simply store and access and performance the CRUD (Create, Read, Update, and Delete) actions. This project's goal is to allow users to create, store, modify, and remove posts (CRUD). People that are interested in topics such as travel or planning to live abroad are the target audience for this initiative. Users can create new orders.
 

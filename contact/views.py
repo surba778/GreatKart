@@ -34,8 +34,9 @@ def contact(request):
             return redirect(reverse('contact'))
         else:
             messages.error(
-                request, 'Unfortunately there was a problem sending your message. \
-                    Please try later.')
+                request,
+                'Unfortunately there was a problem sending your message. \
+                Please try later.')
 
     # if a GET (or any other method) we'll create a blank form
     else:
