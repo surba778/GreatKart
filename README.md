@@ -516,6 +516,9 @@ To clone the project up locally you can follow the following steps:
 
 - [Django 3 By Example - Third Edition by Antonio Melé](https://www.packtpub.com/product/django-3-by-example-third-edition/9781838981952)
 - [Code Institute](https://codeinstitute.net/): for git template IDE and heroku deployment instructions.
+- [Code Institute](https://codeinstitute.net/): <!-- Many thanks to Chris Zielinski and CI's 'Boutique Ado'
+    Walkthrough project - a great reference, inspiration and example:
+    (https://github.com/Code-Institute-Solutions/boutique_ado_v1) -->
 - [Django 4.0 Documentation](https://docs.djangoproject.com/en/4.0/)
 - [W3Schools](https://www.w3schools.com/)
 - [Stackoverflow.com](https://stackoverflow.com/)
