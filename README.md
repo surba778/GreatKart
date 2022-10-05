@@ -164,6 +164,67 @@ The following user stories were satisfied by downloading the Django Allauth appl
 [Flow cycle](https://github.com/surba778/greatkart/blob/main/readme-images/CYCLE.png)
 
 # Features
+
+### Existing Features
+
+- __Navigation Bar__
+
+  - Navigation is a fully responsive feature on all pages (with different versions user's role dependant and whether the user is logged in/out), it includes links on the site's Logo (displaying to the left within the bar), Search Bar in the middle, My Account and Shopping car to the right. All Products, Clothing, Shoes, About, and Contact Pages are located under the search bar. The Register and Login pages are located in a submenu upon clicking My Account (the 'Product Management' and "Mail Newsletter" pages/nav links only show up for superusers).
+  - The Logout nav link shows up (and both Register/Login nav links disappear) once the user has successfully registered/logged in.
+  - The navigation looks the same on each page to allow for easy navigation (without the user having to use the ‘back’ button), taking the user through a logical journey.
+  - This section makes it easy for the user to learn more about the site's different sections and contents.
+  - The search box makes it easy for the shopper/user to search for a specific item.
+  - My Account icon expands upon click with a sub-menu.
+  - "All Products" nav link expands upon click with a sub-menu, shoppers are able to see all products sorted by price, rating, category.
+  - "Clothing" nav link expands upon click with a sub-menu, shoppers are able to see all clothing apparel sorted by their categories (tees, hoodies, shorts, hats).
+
+- __Free Delivery Banner__
+
+  - The Free Delivery Banner is there to entice shoppers to purchase more than €50 in order to get free delivery.
+
+- __Footer__
+
+  - The footer area consists of a link to the site's Privacy Policy and three social links (Facebook, Instagram and Twitter - all of them, if clicked, open on a separate tab).
+  - Like the navigation section, the footer looks the same on each page (and features on all of the pages) to allow for easy navigation, taking the user through a logical journey.
+
+- __Products Page__
+
+  - The Products Page features a sort by box where the shopper can sort products by Price (low to high), Price (high to low), Rating (low to high), Rating (high to low), Name (A-Z), Name (Z-A), Category (A-Z), Category (Z-A).
+  - Users are able to see the product's details', such as photo, name, price, category, rating, description.
+  - If a user clicks on a photo, it brings the user to that Product's Detail Page.
+  - A back to top arrow up button can be found at the bottom right of the page.
+
+- __Product Detail Page__
+
+  - The Product Detail Page features its product's image (which fully opens in a new tab upon click), name, price, category, size (if the product has one), if it's a limited edition or not, rating, description.
+  - Users are able to click on the input box's -/+ buttons to choose the quantity of the product they wish to add to their cart.
+
+- __Bag Page__
+
+  - The Bag Page features all the products which are currently in the bag, their images, names, sizes, sku, price, quantity, subtotal, cart total, delivery charge, grand total.
+  - Users are able to click on the input box's -/+ buttons to change the quantity of a certain product in their cart, and they can also update/remove them from their cart if they wish to.
+  - Shoppers can click on the "Secure Checkout" button to head to the Checkout Page.
+
+- __Checkout Page__
+
+  - The Checkout Page features the order summary to the right.
+  - A form to the left which users need to fill out with their personal details, delivery address and card payment information, in order to complete their order.
+  - If the shopper hasn't got an account, they can create one or login to save their personal details.
+  - The user can click on the Adjust cart button if they wish to make any last minute amendments.
+  - If the user clicks on the Complete Order button, they are redirected to the Checkout Success Page.
+
+- __Checkout Success Page__
+
+  - The Checkout Success Page features the successful order info and delivery details.
+
+- __Profile Page__
+
+  - If the shopper is registered and logged in, they are able to access the Profile Page, which features the user's Default Delivery Information (where they can update).
+  - Shoppers are also able to see their order history information such as order number (and click on it to see more information), date, items, and the total.
+
+- __Product Management Page__
+
+  - **Only superusers** are able to view this page, where they are able to add new products to the site straight from the frontend via a form.
        
 ## Signed In Users and also for admin
 
@@ -228,6 +289,114 @@ Tester must have access to the Django Admin panel in order to manually verify th
 Features previously tested during development in a local environment must be regression tested in production on the live website.
 
 ## Manual Testing
+
+
+__All user stories were manually tested__
+
+- As a Site User I can register for an account so that I have my personal account information.
+  - User clicks on the navigation bar's icon "My Account", "Register".
+  - User fills out the sign up form (validation in place), press sign up.
+  - The page and a toast message tell the user a confirmation email was sent.
+  - User checks their email inbox and click on the link to confirm the email.
+  - User is now fully registered and able to login.
+
+- As a Site User I can login/logout of my account so that I have access to my account profile details and previous orders.
+  - Users are able to log in by clicking on the navigation bar's icon "My Account", "Login/Logout" and view previous orders in the profile tab in the "My Account", "My Profile".
+
+- As a Site User I can recover my password in case I forget it so that I can regain access to my account.
+  - User goes to the login page.
+  - User clicks on "Forgot Password?"
+  - User fills out their email address and clicks on "Reset My Password".
+  - User checks their email inbox and clicks on the link to reset and choose a new password.
+
+- As a Site User I can personalise the user profile so that I can view my order history/confirmations/save my billing information.
+  - Users clicks on the navigation bar's icon "My Account", "My Profile" and view order history/confirmation/save billing address.
+
+- As a Shopper I can browse a list of products so that I can pick some I'd like to buy.
+  - User is greeted by a CTA button at the home/landing page "Shop Now", which will bring them to all the products.
+  - User can click on the nav link "ALL PRODUCTS" and pick if they'd like to sort by price, rating, category,
+
+- As a Shopper I can view a certain product's details so that I see a full description, ratings, picture, sizes.
+  - From the products page, user clicks on any product and will be brought out to the product's detail page, including the product description, rating, picture and sizes available.
+
+- As a Shopper I can see my cart total anytime so that I can be within budget.
+  - The nav bar features a cart icon which reflects in real-time the current state of their cart once a user adds/removes/updates any cart items, the price changes.
+
+- As a Shopper I can view a category of a product so that I can easily find a product I'm interested in without having to browse too much.
+  - User clicks on "Clothing" or "Skateboards" and a sub-menu expands, then the user can click on a specific category.
+
+- As a Shopper I can sort the products' list so that I can sort products by specific filters.
+  - User clicks on "All Products" and from there can select by price, rating, category or all products.
+  - User can click on a dropdown box and sort products by Price (low to high/high to low), Rating (low to high/high to low)
+
+- As a Shopper I can sort more than one category so that I can better tailor the filters to my needs.
+  - User clicks on "All Clothing" or "All Skateboards"
+  - User is able to filter/sort by price/name/rating or sub-category.
+
+- As a Shopper I can search/query a product so that I can find a specific product easily.
+  - User clicks on the permanent nav bar search box.
+  - User inputs a keyword and press enter or clicks on the magnifying glass icon/button
+  - Search query results is returned, user is also able to sort the results by price, rating, name or category.
+
+- As a Shopper I can pick size/quantity of product when buying it so that I don't accidentally select the wrong size/quantity.
+  - If a certain product has different sizes, at its product detail page, a dropdown box will appear and the user is able to pick different sizes (S/M/L) and quantities of a particular size.
+
+- As a Shopper I can see the items in my cart so that I can have control over my spending.
+  - The cart icon at the navigation bar reflects the current spending, if the users clicks on it, it brings them to the cart page, where they can see a breakdown of all the products in the cart, pricing and delivery fee (if any).
+
+- As a Shopper I can update the amount of items in my cart so that I can make adjustments before checking out.
+  - On the cart page, users are able to update quantity or delete any products which are currently in their cart.
+
+- As a Shopper I can input my card details with ease so that I can quickly checkout.
+  - On the checkout page, users are prompted with a form where they fill out their personal and delivery details, and the card number (all through HTTPS) and Stripe handles the payment securely.
+
+- As a Shopper I can safely input my details so that my details are secure.
+  - The website uses Hypertext Transfer Protocol Secure and also Stripe payments infrastructure to handle the payment.
+
+- As a Shopper I can view my order and confirmation of the order after checking out so that I can double-check the order is correct.
+  - As soon as a user completes the order, they are redirected to the Checkout Success page, with their order information, the order is also saved to their Profile page.
+
+- As a Shopper I can get an email confirmation of my order which I can keep for my records.
+  - As soon as a user completes the order, they will receive a confirmation email from the shop, containing their order information.
+
+- As a Site Admin I can add a product so that I can keep the inventory updated with new merch.
+  - Superusers are able to view a page called "Product Management", where they are able to add new products to the site straight from the frontend via a form.
+
+- As a Site Admin I can update a product so that I can change the price/image/description/name.
+  - Once a superuser is logged in, they are able to see an "Edit" link underneath each product from the Products Page, where they are able to update any product.
+
+- As a Site Admin I can delete a product therefore deleting items which I no longer wish to sell.
+  - Once a superuser is logged in, they are able to see a "Delete" link underneath each product from the Products Page, where they are able to delete any product.
+
+- As a Site User I can see a custom 404 page so that I'm not confused as to why I didn't land on the page I had intended to.
+  - The website features a clear custom 404 page which displays a big heading stating "THE PAGE YOU ARE LOOKING FOR ISN'T AVAILABLE", and a CTA button underneath it "RETURN TO SHOP".
+
+- As a Shopper/Potential Shopper I can find a contact page so that I can easily contact the shop with any questions/concerns.
+  - Users are able to contact the shop clicking on the permanent navigation bar Contact Page link.
+  - Once there, users are greeted with a straight forward form where they are able to contact the shop.
+
+- As a Shopper I can subscribe to a newsletter so that I can keep up to date with new collections, sales, discounts.
+  - Users are able to subscribe to the shop's newsletter by clicking on the permanent navigation bar "Subscribe" link.
+  - Once there, users are able to input their email and subscribe to the shop's newsletter.
+
+- As a Shopper I can see a privacy policy link so that I am aware of how my data is being collected and processed.
+  - The footer area consists of a permanent "Privacy Policy" link to the site's Privacy Policy, where users can click on it (opens in a new tab) and learn more about it.
+
+- As a Site Owner I can improve my SEO so that I improve my search engine ranking.
+  - The website contains a sitemap.xml file, a robots.txt file, meta description tag and a meta keyword tag, with a mix of short and long-tail keywords.
+
+- As a Shop Owner I can create a Facebook business page so that I can gain more traction from socials.
+  - The website features social icons in the footer area, if a user clicks on the Facebook icon, it brings them to the shop's FB Business Page.
+
+- As a Shopper I can see a FAQ page so that I can find the most frequently asked questions, without having to contact the shop.
+  - Users are able to read the shop's Frequently Asked Questions by clicking on the permanent navigation bar "FAQ" link.
+  - On this page there's an accordion with the questions and answers.
+
+- As a Shopper I can see an "About" page from the shop so that I can learn more about its story, and gain trust from the brand.
+  - Users are able to learn more about the shop by clicking on the permanent navigation bar "About" page link.
+  - Once there, users can read more about the website's brand story/mission/ethos.
+
+
 All user stories have been included in testing along with each model, each test was ticked off the above list when receiving the expected results.
 
 When manually testing paypal payments it was also important to check if the order still completes or not.
@@ -268,6 +437,26 @@ The site also has privacy policy and terms of service - both documents generated
 The Page owner can send regular interesting content containing advice on greatkart to the subscribers. 
 
 I wanted to give the visitor a freedom to sign up to the newsletter.
+
+### Marketing Research
+
+- Who are our users?
+  - People who are interested in streetwear fashion and skateboarding.
+
+- Which online platforms would we find lots of our users?
+  - Since the majority of our users are teenagers/young adults, we mostly find them on social media.
+
+- Would our users use social media? If yes, which platforms do we think we would find them on?
+  - Mainly on Twitter, TikTok, Instagram, and Facebook.
+
+- What do our users need? Could we meet that need with useful content? If yes, how could we best deliver that content to them?
+  - Quality streetwear fashion apparel and skateboards. We can deliver useful content, for instance with fashion tips newsletters, or posts to our social media following.
+
+- Would our business run sales or offer discounts? How do we think our users would most like to hear about these offers?
+  - Most definitely. Our users would like to hear about discounts through social media and newsletters.
+
+- Would our business have a budget to spend on advertising? Or would it need to work with free or low-cost options to market itself?
+  - Since our business is still growing and not fully established yet, for the time being we would try to grow organically with free social media posts, gifting to influencers via social media, posting fashion tips/trends on a daily basis.
 
 ### Facebook
 
@@ -543,9 +732,7 @@ To clone the project up locally you can follow the following steps:
 
 - [Django 3 By Example - Third Edition by Antonio Melé](https://www.packtpub.com/product/django-3-by-example-third-edition/9781838981952)
 - [Code Institute](https://codeinstitute.net/): for git template IDE and heroku deployment instructions.
-- [Code Institute](https://codeinstitute.net/): <!-- Many thanks to Chris Zielinski and CI's 'Boutique Ado'
-    Walkthrough project - a great reference, inspiration and example:
-    (https://github.com/Code-Institute-Solutions/boutique_ado_v1) -->
+- [Code Institute](https://codeinstitute.net/): - A huge thank you to Chris Zielinski and Code Institute for the ["Boutique Ado" Walkthrough project](https://github.com/Code-Institute-Solutions/boutique_ado_v1) which was a great reference, inspiration and example.
 - [Django 4.0 Documentation](https://docs.djangoproject.com/en/4.0/)
 - [W3Schools](https://www.w3schools.com/)
 - [Stackoverflow.com](https://stackoverflow.com/)
