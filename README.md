@@ -155,9 +155,6 @@ The following user stories were satisfied by downloading the Django Allauth appl
 ![Homepage](readme-images/wireframe%20homepage.png)
 ![Order info](readme-images/wireframe%20order%20info.png)
 ![Checkout page](readme-images/checkout%20wireframe%20page.png)
-![Shopping bag]()
-![Products page]()
-![Mobile page]()
 
 # Database schema
 [Database schema](https://github.com/surba778/greatkart/blob/main/readme-images/db-schema.png)
@@ -271,9 +268,9 @@ Employing all CRUD features - The administrator can Create, Read, Update and Del
     - Model containing the user's details for future reservation.
 
 ## Validator Testing
-  - [Python validator](http://pep8online.com/)()
-  - [HTML Validator](https://validator.w3.org/#validate_by_input)()
-  - [CSS Validator]()
+  - [Python validator](https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/pep8%20validation.JPG)
+  - [HTML Validator](https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/html_valid.jpg)
+  - [CSS Validator](https://github.com/surba778/greatkart/blob/main/readme-images/testing_results/css%20validation.jpg)
   - [Lighthouse responsive test](https://github.com/surba778/greatkart/blob/main/readme-images/Responsive%20test.jpg)
   - [Mobile test](https://github.com/surba778/greatkart/blob/main/readme-images/mobile%20test.jpg)
   - [Desktop test](https://github.com/surba778/greatkart/blob/main/readme-images/Desktop%20test.jpg)
