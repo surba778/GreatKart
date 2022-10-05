@@ -43,17 +43,6 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
         {% endblock %}
 
         <title>Greatkart {% block extra_title %}{% endblock %}</title>
-
-        <!-- Begin Mailchimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-        <style>
-        #mc_embed_signup {
-        background: #fff;
-        clear: left;
-        font: 14px Helvetica, Arial, sans-serif;
-        width: 300px;
-        }
-        </style>
     </head>
         
     <body>
@@ -81,10 +70,10 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" 
+                            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
-                                    <div><i class="fas fa-user fa-lg"></i></div>
+                                    <div><i class="fas fa-user-circle fa-lg"></i></div>
                                     <p class="my-0">My Account</p>
                                 </div>
                             </a>
@@ -108,9 +97,9 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
-                                            ${{ grand_total|floatformat:2 }}
+                                        ${{ grand_total|floatformat:2 }}
                                         {% else %}
-                                            $0.00
+                                        $0.00
                                         {% endif %}
                                     </p>
                                 </div>
@@ -121,7 +110,8 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
             </div>
             <div class="row bg-white">
                 <nav class="navbar navbar-expand-lg navbar-light w-100">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     {% include 'includes/mobile-top-header.html' %}
@@ -130,8 +120,8 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
             </div>
             <div id="delivery-banner" class="row text-center">
                 <div class="col bg-black text-white">
-                    <h4 class="logo-font my-1">Avail free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
-                </div>          
+                    <h4 class="logo-font my-1">Avail free delivery on orders over €{{ free_delivery_threshold }}!</h4>
+                </div>
             </div>
         </header>
 
@@ -159,15 +149,7 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
         {% block content %}
         {% endblock %}
 
-        {% block postloadjs %}
-        <script type="text/javascript">
-
-            $('.toast').toast('show');
-
-        </script>
-        {% endblock %}
-
-        <!-- footer -->
+        <!-- Footer -->
         <footer class="container-wrapper">
         <div class="container quotes-container content-container">
 
@@ -193,8 +175,16 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
             </section>
         </div>
         </footer>
-        <!-- /.footer -->
+    </footer>
+
+    {% block postloadjs %}
+    <!-- js script to show the toast -->
+    <script>
+        $('.toast').toast('show');
+    </script>
+    {% endblock %}
 
 
-    </body>
-    </html>
+</body>
+
+</html>
