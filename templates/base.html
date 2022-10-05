@@ -43,10 +43,9 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
         {% endblock %}
 
         <title>Greatkart {% block extra_title %}{% endblock %}</title>
-
+    </head>
         <!-- Begin Mailchimp Signup Form -->
-        <a link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css"></a>
-        <style type="text/css">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
         #mc_embed_signup {
         background: #fff;
         clear: left;
@@ -62,7 +61,7 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
             // jQuery code
         } );
         </script>
-    </head>
+    
     <body>
         <header class="container-fluid fixed-top">
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
@@ -166,13 +165,16 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
 
         {% block postloadjs %}
         <script type="text/javascript">
+
             $('.toast').toast('show');
+
         </script>
         {% endblock %}
 
         <!-- footer -->
         <footer class="container-wrapper">
         <div class="container quotes-container content-container">
+
             <section class="footer">
             <div class="row">
                 <div class="col-12 page-header mb-4">
@@ -191,8 +193,8 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
                     </i> Follow us on Facebook!
                 </a>
                 </div>
-                </div>
             </div>
+        </div>
             </section>
         </div>
         </footer>
