@@ -97,7 +97,7 @@ View the live site [here](https://kart2022.herokuapp.com/)
 In order to demonstrate an Agile approach to this project, GitHub issues were used as a Kanban board to record the user stories. The user stories were categorised into different User functions between the Admin and the User and each issue would be moved from the "to-do" board to the "done" board as the project progressed.
 
 The Project Kanban board.
- ![Kanban board](readme-images/Kanban%20board.png)
+[Kanban board](https://github.com/surba778/greatkart/blob/main/readme-images/Kanban%20board.png)
 
 ## User stories - Admin features
 
@@ -160,19 +160,12 @@ The following user stories were satisfied by downloading the Django Allauth appl
 ![Mobile page]()
 
 # Database schema
-![Database schema]()
+[Database schema](https://github.com/surba778/greatkart/blob/main/readme-images/db-schema.png)
+[Flow cycle](https://github.com/surba778/greatkart/blob/main/readme-images/CYCLE.png)
 
 # Features
-
-- ### All apps 
- 
-    - Login and sign up links (for unsigned users)
-        [Getting home page]()
-        [Admin page]()  
-        [Admin products page]()
-        [Purchase confirmation]()
        
-## Signed In Users
+## Signed In Users and also for admin
 
 - This is a summary of the features available only to login users:
 
@@ -182,14 +175,17 @@ The following user stories were satisfied by downloading the Django Allauth appl
         - Access orders history 
         - Add, edit and delete orders
         - Access Django admin page: (which involves access to every database and allows to answer costumer messages)
-        [User signed in]()
-        [User invoice page]()
-        [User Checkout page]()
-        
+        [User signed in](https://github.com/surba778/greatkart/blob/main/readme-images/user%20signedin.jpg)
+        [User invoice page](https://github.com/surba778/greatkart/blob/main/readme-images/user%20invoice%20page.jpg)
+        [User Checkout page](https://github.com/surba778/greatkart/blob/main/readme-images/user%20checkout%20page.jpg)
+        [Purchase confirmation](https://github.com/surba778/greatkart/blob/main/readme-images/purchase%20confirmation.jpg)
+        [Successful signin page](https://github.com/surba778/greatkart/blob/main/readme-images/successful%20signin.jpg)
+        [Admin page](https://github.com/surba778/greatkart/blob/main/readme-images/admin%20page.jpg)
+        [Admin product page](https://github.com/surba778/greatkart/blob/main/readme-images/admin%20product%20page.png)
 
 ### The Admin View
 Employing all CRUD features - The administrator can Create, Read, Update and Delete any of these tables.
-![Admin view]()
+![Admin view](https://github.com/surba778/greatkart/blob/main/readme-images/Admin%20view.jpg)
 
 ## Future Prospects 
  
@@ -217,7 +213,10 @@ Employing all CRUD features - The administrator can Create, Read, Update and Del
   - [Python validator](http://pep8online.com/)()
   - [HTML Validator](https://validator.w3.org/#validate_by_input)()
   - [CSS Validator]()
-  - [Lighthouse test]()
+  - [Lighthouse responsive test](https://github.com/surba778/greatkart/blob/main/readme-images/Responsive%20test.jpg)
+  - [Mobile test](https://github.com/surba778/greatkart/blob/main/readme-images/mobile%20test.jpg)
+  - [Desktop test](https://github.com/surba778/greatkart/blob/main/readme-images/Desktop%20test.jpg)
+
 
 ## Assumptions and Dependencies
 Testing is dependent on the website being deployed live on Heroku.
