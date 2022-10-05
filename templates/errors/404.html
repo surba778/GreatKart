@@ -1,26 +1,19 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+
 {% load static %}
+
 {% block content %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+  <div class="page-container container-fluid error-page">
+    <div class="row text-center login-form-content">
+      <div class="col-12">
+        <h1>404</h1>
+      </div>
+      <div class="col-12">
+        <h2>This page doesn't exist</h2>
+      </div>
+      <div class="col-12">
+        <a class="btn bskt-btn checkout-btn error-btn" href="{% url 'products' %}"></a>
+      </div>
     </div>
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    The page you are looking for isn't available
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" 
-                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
-                                Return to shop
-                        </a>
-                    </h4>
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
 {% endblock %}
