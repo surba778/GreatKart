@@ -671,13 +671,14 @@ To clone the project up locally you can follow the following steps:
             - Bucket policy
                 {
                     "Version": "2012-10-17",
+                    "Id": "Policy1660387578457",
                     "Statement": [
                         {
-                            "Sid": "PublicReadGetObject",
+                            "Sid": "Stmt1660387423317",
                             "Effect": "Allow",
                             "Principal": "*",
                             "Action": "s3:GetObject",
-                            "Resource": "arn:aws:s3:::restaurant-booking/*"
+                            "Resource": "arn:aws:s3:::kart-2022/*"
                         }
                     ]
                 }
